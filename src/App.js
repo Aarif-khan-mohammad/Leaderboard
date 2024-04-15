@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { MainContainer , Title , Description } from "./styledComponents";
+import Header from "./components/Header/index.js";
+import Leaderboard from "./components/Leaderboard";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainContainer>
+      <Header/>
+      <Title>Think &lt;Code&gt; Innovate</Title>
+      <Description>Make it work , Mak it right , Make it fast</Description>
+      <Leaderboard/>
+    </MainContainer>
   );
 }
 
